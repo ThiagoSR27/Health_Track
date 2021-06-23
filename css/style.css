@@ -1,0 +1,67 @@
+/*estilo global*/
+*{
+    font-family: geneva;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    text-align: center;
+
+}.footer{
+    font-size: 18px;
+}
+
+/*css tela de login*/
+img#logo{
+    width: 100%;
+    max-width: 500px;
+    
+}
+
+.btn{
+    border-radius: 50px;
+    width: 100%;
+    max-width: 200px;
+}
+
+/*css tela de cadastro*/
+
+.cad-1{
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.cad-2{
+    font-size: 25px;
+}
+
+.form-grid{
+    border: 2px solid black;
+}
+
+/*css tela principal*/
+
+
+.nick-nav{
+    font-size: 15px;
+    
+}
+
+.sr-only{
+    display: none;
+}
+
+a.nav-link{
+    width: 100%;
+    max-width: 300px;
+}
+
+
+/*cards tela principal*/
+
+.cartao{
+    width: 100%;
+    max-width: 350px;
+}
