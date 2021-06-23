@@ -1,2 +1,2 @@
 # Health-Track
-Projeto de analise e desenvolvimento de sistemas da FIAP
+Projeto proposto pela FIAP para aperfeiçoamento e fixação de conhecimentos em HTML e CSS.
