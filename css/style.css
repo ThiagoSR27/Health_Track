@@ -10,10 +10,12 @@
     text-align: center;
 
 }.footer{
-    font-size: 18px;
+
+    font-size: 18px;   
 }
 
 /*css tela de login*/
+
 img#logo{
     width: 100%;
     max-width: 500px;
@@ -23,7 +25,7 @@ img#logo{
 .btn{
     border-radius: 50px;
     width: 100%;
-    max-width: 200px;
+    max-width: 225px;
 }
 
 /*css tela de cadastro*/
