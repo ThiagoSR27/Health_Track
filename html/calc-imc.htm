@@ -7,32 +7,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/icon.png" type="image/png" sizes="32x32">
-    <title>Health Track - Pagina Principal</title>
+    <title>Calculo de I.M.C</title>
 </head>
 <body>
 
     <header>
 
         <nav class="navbar navbar-expand-xl navbar-light bg-light pt-0">
-
             <div class="container-fluid">
-
                  <a href="#" class="navbar-brand">
-
-                    <img src="../img/brand-removebg-preview.png" alt="logo">
-
-                    <div class="title">
-
-                        <h1 class="nick-nav">Health Track</h1>
-
-                    </div>
+                <img src="../img/brand-removebg-preview.png" alt="logo">
+                <div class="title">
+                    <h1 class="nick-nav">Health Track</h1>
+                </div>
             
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="toggle navigation">
-
                     <span class="navbar-toggler-icon"></span>
-                    
                 </button>
 
                 <div class="collapse navbar-collapse" id="menu">
@@ -40,7 +32,7 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item px-2 py-2">
 
-                            <a href="#" class="nav-link active btn btn-outline-secondary">Home <span class="sr-only">(pagina atual)</span></a>
+                            <a href="principal.htm" class="nav-link btn btn-outline-secondary">Home <span class="sr-only">(pagina atual)</span></a>
 
                         </li>
 
@@ -58,7 +50,7 @@
 
                         <li class="nav-item ml-auto px-2 py-2">
 
-                            <a href="#" class="nav-link btn btn-outline-secondary">Cadastro de Altura</a>
+                            <a href="#" class="nav-link btn btn-outline-secondary">Cadastro de Peso</a>
                         </li>
 
                         <li class="nav-item ml-auto px-2 py-2">
@@ -74,61 +66,53 @@
 
     <main class="container-fluid">
 
-        <div class="row mt-3 mb-3 justify-content-center" >
+        <div class="row calc-imc">
 
+            <div class="col-12 bg-light text-dark">
 
-            <div class="col-md-6 col-xl-6 col-sm-6 col-lg-6 pb-5">
-                <div class="cartao">
-
-                    <a href="historico_atividades.htm"><img src="../img/atv-fisica.png" alt="atividade fisica" class="card-img-top img-cartao" ></a>
-
-                    <div class="">
-
-                        <a href="historico_atividades.htm" class="btn btn-outline-secondary">Historico de Atividades</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class=" col-md-6 col-xl-6 col-sm-6 col-lg-6 pb-3">
-
-                <div class="cartao">
-
-                    <a href="historico_peso.htm"><img src="../img/peso.png" alt="imagem de uma balança" class="card-img-top img-cartao"></a>
-
-                    <div class="pt-3">
-
-                        <a href="historico_peso.htm" class="btn btn-outline-secondary">Peso</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-5 col-xl-5 col-sm-5 col-lg-5 pb-3">
-
-                <div class="cartao">
-
-                    <a href="calc-imc.htm"><img src="../img/imc.png" alt="Calculo de IMC" class="card-img-top img-cartao"></a>
-
-                    <div class="pt-3">
-
-                        <a href="calc-imc.htm" class="btn btn-outline-secondary" >Calculo do IMC</a>
-                    </div>
-
-                </div>
+                <h2 class="hist-title">Calculo de I.M.C</h2>
 
             </div>
 
         </div>
 
+        <form class="form-imc pt-4">
+
+            <div class="row justify-content-center">
+
+                <div class="col-5 pt-3">
+
+                    <label for="altura-imc">Altura</label>
+                    <input type="text" class="form-control" id="alt-imc" placeholder="Digite Sua Altura">
+
+                </div>
+
+                <div class="col-5 pt-3">
+
+                    <label for="peso-imc">Peso</label>
+                    <input type="text" class="form-control" id="peso-imc" placeholder="Digite Seu Peso">
+
+                </div>
+
+                <div class="col-5 pt-3">
+
+                    <label for="result-imc">Resultado</label>
+                    <input type="text" class="form-control" id="result-imc" placeholder="Digite Sua Altura">
+
+                </div>
+
+                <div class="col-12 pt-3">
+                    
+                    <button class="btn btn-outline-success">Calcular</button>
+
+                </div>
+
+            </div>
+        </form>
+
     </main>
 
-    
-    <footer class="footer mt-auto bg-light text-dark pt-3">
+    <footer class="footer mt-auto bg-light text-dark pt-3 fixed-bottom">
         <div class="container-fluid">
             <h2 class="footer">©2021 Health Track </h2>
         </div>
