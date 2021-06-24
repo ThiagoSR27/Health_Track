@@ -70,6 +70,24 @@ a.nav-link{
 
 /*Tela de historico de atividades*/
 
-.teste{
-    align-content: center;
+.hist-title{
+    font-size: 25px;
+    font-family: geneva;
+}
+
+.hist-comp{
+    font-size: 18px;
+    
+}
+
+.del-icon{
+    font-size: 25px;
+}
+
+.cartao-atv-top{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.cartao-atv{
+    border-bottom: 1px solid black;
 }
