@@ -63,7 +63,13 @@ a.nav-link{
 
 /*cards tela principal*/
 
-.teste{
+.img-cartao{
     width: 100%;
     max-width: 350px;
+}
+
+/*Tela de historico de atividades*/
+
+.teste{
+    align-content: center;
 }
