@@ -47,22 +47,47 @@
 
                 <div class="form-group col-md-5 col-xl-5 pt-3 px-3">
 
-                    <label for="email-cad" class="label-cad">Email</label>
-                    <input type="email" class="form-control" id="email-cad" placeholder="Digite o seu email">
+                    <div class="form-floating">
+
+                        <input type="email" class="form-control" id="username-cad" placeholder="Digite o seu email">
+                        <label for="username-cad" class="label-cad">Username</label>
+                       
+                    </div>
+                    
                 </div>
 
 
 
                 <div class="form-group col-md-5 col-xl-5 pt-3 px-3">
-                    <label for="pwd-cad" class="label-cad">Senha</label>
+                    <div class="form-floating">
+
                     <input type="password" class="form-control" id="pwd-cad" placeholder="Digite sua senha">
+                    <label for="pwd-cad" class="label-cad">Senha</label>
+
+                    </div>
 
                 </div>
 
-                <div class="form-group col-md-6 col-xl-4 pb-5 pt-3 px-3">
+                <div class="form-group col-md-5 col-xl-4 pb-5 pt-3 px-3">
 
-                    <label for="cpf-cad" class="label-cad">CPF</label>
+                    <div class="form-floating">
+                      
+                        <input type="text" class="form-control" id="email-cad" placeholder="XXX-XXX-XXX.XX">  
+                        <label for="cpf-cad" class="label-cad">Email</label>
+                        
+                    </div>
+
+                </div>
+
+                <div class="form-group col-md-5 col-xl-4 pb-5 pt-3 px-3">
+
+                    <div class="form-floating">
+
                     <input type="text" class="form-control" id="cpf-cad" placeholder="XXX-XXX-XXX.XX">
+                    <label for="cpf-cad" class="label-cad">CPF</label>
+
+                    </div>
+
 
                 </div>
             </div>
@@ -76,131 +101,196 @@
 
                 <div class="form-group col-md-5 col-xl-5 pt-3 px-3">
 
+                    <div class="form-floating">
+                      
+                    <input type="text" class="form-control " id="nome-cad" placeholder="Digite seu nome">  
                     <label for="nome-cad" class="label-cad">Nome</label>
-                    <input type="text" class="form-control " id="nome-cad" placeholder="Digite seu nome">
+                    
+                    </div>
 
                 </div>
 
                 <div class="form-group col-md-5 col-xl-5 pt-3 px-3">
 
-                    <label for="sb-nome-cad" class="label-cad">Sobrenome</label>
+                    <div class="form-floating">
+
                     <input type="text" class="form-control" id="sm-nome-cad" placeholder="Digite seu sobrenome">
+                    <label for="sb-nome-cad" class="label-cad">Sobrenome</label>
+                    
+                    </div>
+
                 </div>
 
                 <div class=" form-group col-md-3 col-xl-3 pt-3 px-3">
 
-                    <label for="dt-nasc-cad" class="label-cad">Data de Nascimento </label>
+                    <div class="form-floating">
+
                     <input type="date" class="form-control" id="dt-nasc-cad">
+                    <label for="dt-nasc-cad" class="label-cad">Data de Nascimento </label>
+
+                    </div>
+
                 </div>
 
             <div class="form-group col-md-4 col-xl-4 pt-3 px-3">
-                <label for="rg-cad">RG</label>
-                <input type="text" class="form-control" id="rg-cad" placeholder="XXX.XXX.XXX-X">
+
+                <div class="form-floating">
+                
+                    <input type="text" class="form-control" id="rg-cad" placeholder="XXX.XXX.XXX-X">
+                    <label for="rg-cad">RG</label>
+
+                </div>
 
             </div>
 
             <div class="form-group col-md-3 col-xl-3 pt-3 px-3">
-                
-                <label for="sexo-cad" class="label-cad">Sexo</label>
-                <select name="sexo-cad" class="form-control" id="sexo-cad">
 
-                    <option selected>Selecione</option>
-                    <option value="fem">Feminino</option>
-                    <option value="mas">Masculino</option>
-                    <option value="n-bin">Não binario</option>
-                    <option value="trans-gen">Transgenero</option>
-                </select>
+                <div class="form-floating">
+
+                    <select name="sexo-cad" class="form-select" id="sexo-cad">
+
+                        <option selected>Selecione</option>
+                        <option value="fem">Feminino</option>
+                        <option value="mas">Masculino</option>
+                        <option value="n-bin">Não binario</option>
+                        <option value="trans-gen">Transgenero</option>
+
+                    </select>
+                    
+                    <label for="sexo-cad" class="label-cad">Sexo</label>
+
+                </div>
+                
+ 
             </div> 
 
             <div class="form-group col-md-3 col-xl-3 pt-3 px-3">
 
-                <label for="cep-cad" class="label-cad">CEP</label>
-                <input type="text" class="form-control" id="cep-cad" placeholder="XX.XXX-XX">
+                <div class="form-floating">
+
+                    <input type="text" class="form-control" id="cep-cad" placeholder="XX.XXX-XX">
+
+                    <label for="cep-cad" class="label-cad">CEP</label>
+
+                </div>
 
             </div>
 
             <div class="form-group col-md-4 col-xl-4 pt-3 px-3">
 
-                <label for="endereco-label" class="label-cad">Endereço</label>
-                <input type="text" class="form-control" id="endereco-label" placeholder="Digite seu endereço">
+                <div class="form-floating">
+
+                    <input type="text" class="form-control" id="endereco-label" placeholder="Digite seu endereço">
+
+                    <label for="endereco-label" class="label-cad">Endereço</label>
+
+                </div>
+
             </div>
 
             <div class="form-group col-md-4 col-xl-3 pt-3 px-3">
 
-                <label for="num-cad" class="label-cad">N°</label>
-                <input type="text" class="form-control" id="num-cad" placeholder="Numero da casa">
+                <div class="form-floating">
+                
+                    <input type="text" class="form-control" id="num-cad" placeholder="Numero da casa">
+                    <label for="num-cad" class="label-cad">N°</label>
+
+                </div>
 
             </div>
 
             <div class="form-group col-md-4 col-xl-4 pt-3 px-3">
 
-                <label for="bairro-cad" class="label-cad">Bairro</label>
-                <input type="text" class="form-control" id="bairro-cad" placeholder="Digite seu bairro">
+                <div class="form-floating">
+
+                    <input type="text" class="form-control" id="bairro-cad" placeholder="Digite seu bairro">
+
+                    <label for="bairro-cad" class="label-cad">Bairro</label>
+
+                </div>
 
             </div>
 
             <div class="form-group col-md-3 col-xl-3 pt-3 px-3">
 
-                <label for="comp-cad">Complemento</label>
-                <input type="text" class="form-control" id="comp-cad" placeholder="Complemento do n°">
+                <div class="form-floating">
+
+                    <input type="text" class="form-control" id="comp-cad" placeholder="Complemento do n°">
+
+                    <label for="comp-cad">Complemento</label>
+
+                </div>
 
             </div>
 
             <div class="form-group col-md-4 col-xl-4 pt-3 px-3">
 
-                <label for="cidade-cad">Cidade</label>
-                <input type="text" class="form-control" id="cidade-cad" placeholder="Digite a sua cidade">
+                <div class="form-floating">
+
+                    <input type="text" class="form-control" id="cidade-cad" placeholder="Digite a sua cidade">
+                    
+                    <label for="cidade-cad">Cidade</label>
+                    
+                </div>
 
             </div>
 
             <div class="form-group col-md-3 col-xl-3 pt-3 pb-5 px-3">
+                <div class="form-floating">
 
-                <label for="estado-cad"> Estado</label>
-                <select name="estado-cad" id="estado-cad" class="form-control">
+                    <select name="estado-cad" id="estado-cad" class="form-select">
                     
-                    <option selected value="none">Selecione..</option>
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
+                        <option selected value="none">Selecione..</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
 
-                </select>
+                    </select>
+
+                    <label for="estado-cad"> Estado</label>
+                </div>
 
             </div>
             
                 <div class="form-group col-md-4 col-xl-4 pt-3 pb-5 px-3">
 
-                    <label for="tel-cad">DDD + Telefone</label>
-                    <input type="text" class="form-control" id="tel-cad" placeholder="(XX)XXXX-XXXX">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="tel-cad" placeholder="(XX)XXXX-XXXX">
+                        <label for="tel-cad">DDD + Telefone</label>
+                    </div>
+
                 </div>
 
                 <div class="form-group col-md-4 col-xl-4 pt-3 pb-5 px-3">
 
-                    <label for="cel-cad">DDD + Celular</label>
-                    <input type="text" class="form-control" id="cel-cad" placeholder="(XX)9XXXX-XXXX">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="cel-cad" placeholder="(XX)9XXXX-XXXX">
+                        <label for="cel-cad">DDD + Celular</label>
+                    </div>
 
                 </div>
         </form>
