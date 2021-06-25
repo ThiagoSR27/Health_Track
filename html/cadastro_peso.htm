@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/icon.png" type="image/png" sizes="32x32">
-    <title>Calculo de I.M.C</title>
+    <title>Cadastro de Peso</title>
 </head>
 <body>
 
@@ -38,7 +38,7 @@
 
                         <li class="nav-item ml-auto px-2 py-2">
 
-                            <a href="#" class="nav-link btn btn-outline-secondary">Cadastro de Peso</a>
+                            <a href="#" class="nav-link active btn btn-outline-secondary">Cadastro de Peso</a>
 
                         </li>
 
@@ -50,7 +50,7 @@
 
                         <li class="nav-item ml-auto px-2 py-2">
 
-                            <a href="#" class="nav-link btn btn-outline-secondary">Cadastro de Peso</a>
+                            <a href="#" class="nav-link btn btn-outline-secondary">Cadastro de Altura</a>
                         </li>
 
                         <li class="nav-item ml-auto px-2 py-2">
@@ -62,7 +62,7 @@
                     </ul>
 
                 </div>
-                
+
             </div>
 
         </nav>
@@ -71,7 +71,7 @@
 
             <div class="container-fluid">
 
-                <h1 class="hist-title">Calculo de I.M.C</h1>
+                <h1 class="hist-title">Cadastro de Peso</h1>
 
             </div>
 
@@ -82,51 +82,58 @@
 
     <main class="container-fluid">
 
-        <form class="form-imc pt-4">
+        <form class="form-peso pt-4">
 
             <div class="row justify-content-center">
 
-                <div class="col-5 pt-3">
+                <div class="col-6 mx-2">
 
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="alt-imc" placeholder="Digite Sua Altura">
-                        <label for="altura-imc">Altura</label>
+
+                        <input type="number" class="form-control" id="cad-peso" placeholder="Insira seu Peso">
+                        <label for="cad-peso">Peso</label>
+
                     </div>
+
+                    <div class="form-text">Insira o peso em KG</div>                    
                     
                 </div>
 
-                <div class="col-5 pt-3">
-
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="peso-imc" placeholder="Digite Seu Peso">
-                        <label for="peso-imc">Peso</label>
-                    </div>
-
-                </div>
-
-                <div class="col-5 pt-3">
+                <div class="col-6 my-5">
 
                     <div class="form-floating">
 
-                        <input type="text" class="form-control" id="result-imc" placeholder="Digite Sua Altura">
-                        <label for="result-imc">Resultado</label>
-                        
+                        <input type="date" class="form-control" id="data-peso">
+                        <label for="data-peso">Data</label>
                     </div>
 
                 </div>
-
-                <div class="col-12 pt-3">
-                    
-                    <button class="btn btn-outline-success">Calcular</button>
-
-                </div>
-
             </div>
+
+            <div class="form-buttons pb-5">
+
+                <div class="row justify-content-center">
+                    <div class="form-group col-md-5 col-xl-5 pb-5">
+    
+                        <button class="btn btn-outline-success" type="submit">Concluir</button>
+    
+                    </div>
+    
+                    <div class="form-group col-md-5 col-xl-5">
+    
+                        <button class="btn btn-outline-danger" type="reset">Cancelar</button>
+    
+                    </div>
+    
+                </div>
+                
+            </div>
+
         </form>
 
     </main>
 
-    <footer class="footer mt-auto bg-light text-dark pt-3 fixed-bottom">
+    <footer class="footer mt-auto bg-light text-dark pt-3">
         <div class="container-fluid">
             <h2 class="footer">©2021 Health Track </h2>
         </div>
