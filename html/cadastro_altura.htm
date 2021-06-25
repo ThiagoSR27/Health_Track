@@ -32,25 +32,25 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item px-2 py-2">
 
-                            <a href="#" class="nav-link active btn btn-outline-secondary">Home <span class="sr-only">(pagina atual)</span></a>
+                            <a href="principal.htm" class="nav-link btn btn-outline-secondary">Home <span class="sr-only">(pagina atual)</span></a>
 
                         </li>
 
                         <li class="nav-item ml-auto px-2 py-2">
 
-                            <a href="#" class="nav-link btn btn-outline-secondary">Cadastro de Peso</a>
+                            <a href="cadastro_peso.htm" class="nav-link btn btn-outline-secondary">Cadastro de Peso</a>
 
                         </li>
 
                         <li class="nav-item ml-auto px-2 py-2">
 
-                            <a href="#" class="nav-link btn btn-outline-secondary">Cadastro de Atividade Fisica</a>
+                            <a href="cadastro_atividade.htm" class="nav-link btn btn-outline-secondary">Cadastro de Atividade Fisica</a>
 
                         </li>
 
                         <li class="nav-item ml-auto px-2 py-2">
 
-                            <a href="#" class="nav-link btn btn-outline-secondary">Cadastro de Peso</a>
+                            <a href="#" class="nav-link active btn btn-outline-secondary">Cadastro de Altura</a>
                         </li>
 
                         <li class="nav-item ml-auto px-2 py-2">
@@ -58,17 +58,68 @@
                             <a href="login.htm" class="nav-link btn btn-outline-danger">Sair</a>
 
                         </li>
+
                     </ul>
+
                 </div>
+
             </div>
+
         </nav>
+
+        <div class=" div-title bg-light text-dark mt-auto">
+
+            <div class="container-fluid">
+
+                <h1 class="hist-title">Cadastro de Altura</h1>
+
+            </div>
+
+        </div>
+
     </header>
 
     <main class="container-fluid">
 
-        <div>
+        <form class="cad-alt pt-4">
 
-        </div>
+            <div class="row justify-content-center">
+                
+                <div class="col-6 mx-2">
+
+                    <div class="form-floating">
+
+                        <input type="number" class="form-control" id="alt-cad" placeholder="Insira sua Altura">
+                        <label for="alt-cad">Altura</label>
+
+                    </div>
+
+                    <div class="form-text">Insira sua Altura em Centimetro</div>
+
+                </div>
+
+            </div>
+
+            <div class="form-buttons py-5">
+
+                <div class="row justify-content-center">
+                    <div class="form-group col-md-5 col-xl-5 pb-5">
+    
+                        <button class="btn btn-outline-success" type="submit">Concluir</button>
+    
+                    </div>
+    
+                    <div class="form-group col-md-5 col-xl-5">
+    
+                        <button class="btn btn-outline-danger" type="reset">Cancelar</button>
+    
+                    </div>
+    
+                </div>
+                
+            </div>
+
+        </form>
 
     </main>
 
