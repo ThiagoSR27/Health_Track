@@ -14,6 +14,17 @@
     font-size: 18px;   
 }
 
+.div-title{
+    border-bottom: 1px solid black;
+}
+
+.btn{
+    border-radius: 50px;
+    width: 100%;
+    max-width: 225px;
+}
+
+
 /*css tela de login*/
 
 img#logo{
@@ -22,11 +33,7 @@ img#logo{
     
 }
 
-.btn{
-    border-radius: 50px;
-    width: 100%;
-    max-width: 225px;
-}
+
 
 /*css tela de cadastro*/
 
@@ -43,7 +50,7 @@ img#logo{
     border: 2px solid black;
 }
 
-/*css tela principal*/
+/*css barra de menu*/
 
 
 .nick-nav{
@@ -70,13 +77,8 @@ a.nav-link{
 
 /*Tela de historico de atividades*/
 
-.teste{
-    width: 100%;
-}
-
 .hist-title{
     font-size: 25px;
-    
 }
 
 
