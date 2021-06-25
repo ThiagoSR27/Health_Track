@@ -70,26 +70,14 @@ a.nav-link{
 
 /*Tela de historico de atividades*/
 
-.hist-title{
-    font-size: 25px;
-    font-family: geneva;
+.teste{
+    width: 100%;
 }
 
-.hist-comp{
-    font-size: 18px;
+.hist-title{
+    font-size: 25px;
     
 }
 
-.del-icon{
-    font-size: 25px;
-}
-
-.cartao-atv-top{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-.cartao-atv{
-    border-bottom: 1px solid black;
-}
 
 /*Tela de calculo de imc*/
