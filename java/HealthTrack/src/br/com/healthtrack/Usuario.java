@@ -1,7 +1,7 @@
 package br.com.healthtrack;
 
 public class Usuario {
-	private int cdUsuario;
+	public int cdUsuario;
 	private String nome;
 	private String sobrenome;
 	private String telCelular; 
@@ -13,6 +13,22 @@ public class Usuario {
 	
 	public Usuario() {
 
+	}
+
+
+	/**
+	 * @return the cdUsuario
+	 */
+	public int getCdUsuario() {
+		return cdUsuario;
+	}
+
+
+	/**
+	 * @param cdUsuario the cdUsuario to set
+	 */
+	public void setCdUsuario(int cdUsuario) {
+		this.cdUsuario = cdUsuario;
 	}
 
 
