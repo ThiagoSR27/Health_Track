@@ -1,14 +1,20 @@
 package br.com.healthtrack.teste;
 
-import java.util.Scanner;
-
 import br.com.healthtrack.Usuario;
 public class HealthTrackTeste {
     public static void main(String[] args) {
-        Scanner entry = new Scanner(System.in);
         Usuario user = new Usuario();
 
         user.setCdUsuario(1);
-        System.out.println(user.getCdUsuario());
+        
+        user.setNome("Jose");
+        user.setSobrenome("dos Testes");
+        user.setTelCelular(96425-3545);
+        user.setIdade(25);
+        user.setEmail("testes_jose@gmail.com");
+
+        System.out.println("O codigo do usuario é: " + user.getCdUsuario() + " O nome é: " + user.getNome() + " " + user.getSobrenome() + " O numero do celular é " + user.getTelCelular() 
+        + " A idade é: " + user.getIdade() + " e o email é : " + user.getEmail());
+
     }
 }

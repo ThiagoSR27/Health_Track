@@ -11,7 +11,7 @@ public class Usuario extends Pessoa {
 	private int cdUsuario;
 	
 	/**Numero do celular.*/
-	private String telCelular;
+	private int telCelular;
 	
 	/**Usuario*/
 	private String nmUser;
@@ -53,7 +53,7 @@ public class Usuario extends Pessoa {
 	/**
 	 * @return retorna dos dados armazenados em TelCelular
 	 */
-	public String getTelCelular() {
+	public int getTelCelular() {
 		return telCelular;
 	}
 
@@ -61,7 +61,7 @@ public class Usuario extends Pessoa {
 	/**
 	 * @param telCelular passa os dados para TelCelular
 	 */
-	public void setTelCelular(String telCelular) {
+	public void setTelCelular(int telCelular) {
 		this.telCelular = telCelular;
 	}
 
