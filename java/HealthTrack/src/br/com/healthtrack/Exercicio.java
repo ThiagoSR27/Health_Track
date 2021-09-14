@@ -11,12 +11,13 @@ public class Exercicio {
 	/**Data em que o exercicio foi realizado*/
 	private String dataExercicio;
 	
-	/**Descrição do exercicio*/
+	/**Descriï¿½ï¿½o do exercicio*/
 	private String dsExercicio;
 	
-	/**Duração do exercicio*/
+	/**Duraï¿½ï¿½o do exercicio*/
 	private float duracao;
 
+	/*Construtor */
 	public Exercicio() {
 		
 	}
@@ -29,7 +30,7 @@ public class Exercicio {
 	}
 
 	/**
-	 * @param passa o valor do parametro dataExercicio para a variavel dataExercicio
+	 * @param dataExercicio passa o valor do parametro dataExercicio para a variavel dataExercicio
 	 */
 	public void setDataExercicio(String dataExercicio) {
 		this.dataExercicio = dataExercicio;
@@ -43,7 +44,7 @@ public class Exercicio {
 	}
 
 	/**
-	 * @param passa o valor do parametro dsExercicio para a variavel dsExercicio
+	 * @param dsExercicio passa o valor do parametro dsExercicio para a variavel dsExercicio
 	 */
 	public void setDsExercicio(String dsExercicio) {
 		this.dsExercicio = dsExercicio;
@@ -57,7 +58,7 @@ public class Exercicio {
 	}
 
 	/**
-	 * @param passa o valor do parametro duracao para a variavel duracao
+	 * @param  duracao passa o valor do parametro duracao para a variavel duracao
 	 */
 	public void setDuracao(float duracao) {
 		this.duracao = duracao;

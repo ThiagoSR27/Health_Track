@@ -9,8 +9,13 @@ public class Acesso {
 	/**Codigo do nivel de acesso*/
 	private int cdAcesso;
 	
-	/**Descrição do nivel de acesso*/
+	/**Descriï¿½ï¿½o do nivel de acesso*/
 	private String descAcesso;
+
+	/*Construtor */
+	public Acesso() {
+		
+	}
 	
 	/**
 	 * @return retorna o valor da variavel cdAcesso
@@ -20,7 +25,7 @@ public class Acesso {
 	}
 
 	/**
-	 * @param passa o valor do parametro cdAcesso para a variavel cdAcesso
+	 * @param cdAcesso passa o valor do parametro cdAcesso para a variavel cdAcesso
 	 */
 	public void setCdAcesso(int cdAcesso) {
 		this.cdAcesso = cdAcesso;
@@ -34,13 +39,11 @@ public class Acesso {
 	}
 
 	/**
-	 * @param passa o valor do parametro descAcesso para a variavel descAcesso
+	 * @param descAcesso passa o valor do parametro descAcesso para a variavel descAcesso
 	 */
 	public void setdescAcesso(String descAcesso) {
 		this.descAcesso = descAcesso;
 	}
 
-	public Acesso() {
-		
-	}
+	
 }

@@ -5,16 +5,10 @@ package br.com.healthtrack;
  * @version 1.0
  *
  */
-public class Usuario {
+public class Usuario extends Pessoa {
 	
 	/*Codigo do usuario.**/
 	private int cdUsuario;
-	
-	/*Nome do usuario.**/
-	private String nome;
-	
-	/**Sobrenome do usuario.*/
-	private String sobrenome;
 	
 	/**Numero do celular.*/
 	private String telCelular;
@@ -23,7 +17,7 @@ public class Usuario {
 	private String nmUser;
 	
 	/**Senha*/
-	private String nrsenha;
+	private String nrSenha;
 	
 	/**Email*/
 	private String email;
@@ -31,14 +25,14 @@ public class Usuario {
 	/**Numero do CPF*/
 	private int cpf;
 	
-	
+	/*Construtor */
 	public Usuario() {
 
 	}
 
 
 	/**
-	 * @return the cdUsuario
+	 * @return retorna os dados armazenados em Usuario
 	 */
 	public int getCdUsuario() {
 		return cdUsuario;
@@ -46,47 +40,18 @@ public class Usuario {
 
 
 	/**
-	 * @param cdUsuario the cdUsuario to set
+	 * @param cdUsuario passa os dados para cdUsuario
 	 */
 	public void setCdUsuario(int cdUsuario) {
 		this.cdUsuario = cdUsuario;
 	}
 
 
-	/**
-	 * @return the nome
-	 */
-	public String getNome() {
-		return nome;
-	}
+	
 
 
 	/**
-	 * @param nome the nome to set
-	 */
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-
-	/**
-	 * @return the sobrenome
-	 */
-	public String getSobrenome() {
-		return sobrenome;
-	}
-
-
-	/**
-	 * @param sobrenome the sobrenome to set
-	 */
-	public void setSobrenome(String sobrenome) {
-		this.sobrenome = sobrenome;
-	}
-
-
-	/**
-	 * @return the telCelular
+	 * @return retorna dos dados armazenados em TelCelular
 	 */
 	public String getTelCelular() {
 		return telCelular;
@@ -94,7 +59,7 @@ public class Usuario {
 
 
 	/**
-	 * @param telCelular the telCelular to set
+	 * @param telCelular passa os dados para TelCelular
 	 */
 	public void setTelCelular(String telCelular) {
 		this.telCelular = telCelular;
@@ -102,7 +67,7 @@ public class Usuario {
 
 
 	/**
-	 * @return the nmUser
+	 * @return retorna os dados armazenados em NmUser
 	 */
 	public String getNmUser() {
 		return nmUser;
@@ -110,7 +75,7 @@ public class Usuario {
 
 
 	/**
-	 * @param nmUser the nmUser to set
+	 * @param nmUser passa os dados para NmUser
 	 */
 	public void setNmUser(String nmUser) {
 		this.nmUser = nmUser;
@@ -118,23 +83,23 @@ public class Usuario {
 
 
 	/**
-	 * @return the nrsenha
+	 * @return retorna os dados armazenados em NrSenha
 	 */
-	public String getNrsenha() {
-		return nrsenha;
+	public String getNrSenha() {
+		return nrSenha;
 	}
 
 
 	/**
-	 * @param nrsenha the nrsenha to set
+	 * @param nrsenha passa os dados armazenados para nrSenha
 	 */
-	public void setNrsenha(String nrsenha) {
-		this.nrsenha = nrsenha;
+	public void setNrSenha(String nrsenha) {
+		this.nrSenha = nrsenha;
 	}
 
 
 	/**
-	 * @return the email
+	 * @return retorna os dados armazenados em email
 	 */
 	public String getEmail() {
 		return email;
@@ -142,7 +107,7 @@ public class Usuario {
 
 
 	/**
-	 * @param email the email to set
+	 * @param email passa os dados armazenados para email
 	 */
 	public void setEmail(String email) {
 		this.email = email;
@@ -150,7 +115,7 @@ public class Usuario {
 
 
 	/**
-	 * @return the cpf
+	 * @return retorna os dados armazenados em cpf
 	 */
 	public int getCpf() {
 		return cpf;
@@ -158,7 +123,7 @@ public class Usuario {
 
 
 	/**
-	 * @param cpf the cpf to set
+	 * @param cpf passa os dados armazenados para cpf
 	 */
 	public void setCpf(int cpf) {
 		this.cpf = cpf;

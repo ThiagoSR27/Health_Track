@@ -1,7 +1,7 @@
 package br.com.healthtrack;
 
 /**
- * Classe herança IMC
+ * Classe heranï¿½a IMC
  * @author thiag_edf
  * @version 1.0
  *
@@ -9,6 +9,8 @@ package br.com.healthtrack;
 public class Imc {
 	private float altura;
 	/**Altura do usuario*/
+
+	/*construtor*/
 	public Imc() {
 		
 	}
@@ -22,7 +24,7 @@ public class Imc {
 	}
 
 	/**
-	 * @param passa o valor do parametro altura para a variavel altura
+	 * @param altura passa o valor do parametro altura para a variavel altura
 	 */
 	public void setAltura(float altura) {
 		this.altura = altura;

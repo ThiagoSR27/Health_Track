@@ -10,12 +10,13 @@ public class Plano {
 	/**Codigo do plano*/
 	private int codPlano;
 	
-	/**Descrição do plano*/
+	/**Descriï¿½ï¿½o do plano*/
 	private String descPlano;
 	
 	/**Valor do plano*/
 	private float valorPlano;
 	
+	/*Construtor */
 	public Plano() {
 		
 	}
@@ -28,7 +29,7 @@ public class Plano {
 	}
 
 	/**
-	 * @param passa o valor do parametro codPlano para a variavel codPlano
+	 * @param codPlano passa o valor do parametro codPlano para a variavel codPlano
 	 */
 	public void setCodPlano(int codPlano) {
 		this.codPlano = codPlano;
@@ -42,7 +43,7 @@ public class Plano {
 	}
 
 	/**
-	 * @param passa o valor do parametro descPlano para a variavel descPlano
+	 * @param descPlano passa o valor do parametro descPlano para a variavel descPlano
 	 */
 	public void setDescPlano(String descPlano) {
 		this.descPlano = descPlano;
@@ -56,7 +57,7 @@ public class Plano {
 	}
 
 	/**
-	 * @param passa o valor do parametro valorPlano para a variavel valorPlano
+	 * @param valorPlano passa o valor do parametro valorPlano para a variavel valorPlano
 	 */
 	public void setValorPlano(float valorPlano) {
 		this.valorPlano = valorPlano;

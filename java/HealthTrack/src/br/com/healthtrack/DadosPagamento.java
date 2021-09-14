@@ -8,89 +8,91 @@ public class DadosPagamento {
 	private String dtVencCartao;
 	private String codVerificacao;
 	
+
+	/*Construtor */
 	public DadosPagamento() {
 		
 	}
 
 	/**
-	 * @return the cdDadosPagamento
+	 * @return retorna os dados armazenados em cdDadosPagamento
 	 */
 	public int getCdDadosPagamento() {
 		return cdDadosPagamento;
 	}
 
 	/**
-	 * @param cdDadosPagamento the cdDadosPagamento to set
+	 * @param cdDadosPagamento passa para cdDadosPagamento
 	 */
 	public void setCdDadosPagamento(int cdDadosPagamento) {
 		this.cdDadosPagamento = cdDadosPagamento;
 	}
 
 	/**
-	 * @return the formaPagamento
+	 * @return retorna os dados armazenados em formaPagamento
 	 */
 	public int getFormaPagamento() {
 		return formaPagamento;
 	}
 
 	/**
-	 * @param formaPagamento the formaPagamento to set
+	 * @param formaPagamento passa os dados para formaPagamento
 	 */
 	public void setFormaPagamento(int formaPagamento) {
 		this.formaPagamento = formaPagamento;
 	}
 
 	/**
-	 * @return the numeroCartao
+	 * @return  retorna os dados armazenados em numeroCartao
 	 */
 	public int getNumeroCartao() {
 		return numeroCartao;
 	}
 
 	/**
-	 * @param numeroCartao the numeroCartao to set
+	 * @param numeroCartao passa os dados para numeroCartao
 	 */
 	public void setNumeroCartao(int numeroCartao) {
 		this.numeroCartao = numeroCartao;
 	}
 
 	/**
-	 * @return the nomeNoCartao
+	 * @return retorna os dados armazenados em nomeNoCartao
 	 */
 	public String getNomeNoCartao() {
 		return nomeNoCartao;
 	}
 
 	/**
-	 * @param nomeNoCartao the nomeNoCartao to set
+	 * @param nomeNoCartao passa os dados para nomeNoCartao
 	 */
 	public void setNomeNoCartao(String nomeNoCartao) {
 		this.nomeNoCartao = nomeNoCartao;
 	}
 
 	/**
-	 * @return the dtVencCartao
+	 * @return retorna os dados armazenados em dtVencCartao
 	 */
 	public String getDtVencCartao() {
 		return dtVencCartao;
 	}
 
 	/**
-	 * @param dtVencCartao the dtVencCartao to set
+	 * @param dtVencCartao passa os dados para dtVencCartao
 	 */
 	public void setDtVencCartao(String dtVencCartao) {
 		this.dtVencCartao = dtVencCartao;
 	}
 
 	/**
-	 * @return the codVerificacao
+	 * @return retorna os dados armazenados em codVericacao
 	 */
 	public String getCodVerificacao() {
 		return codVerificacao;
 	}
 
 	/**
-	 * @param codVerificacao the codVerificacao to set
+	 * @param codVerificacao passa os dados armazenados em codVerificacao
 	 */
 	public void setCodVerificacao(String codVerificacao) {
 		this.codVerificacao = codVerificacao;
