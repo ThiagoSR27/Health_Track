@@ -1,34 +1,42 @@
 package br.com.healthtrack;
 
+/**Abstrai uma classe que ira determinar o nivel de acesso do usuario ao sistema
+ * @author thiag_ed
+ * @version 1.0
+ *
+ */
 public class Acesso {
+	/**Codigo do nivel de acesso*/
 	private int cdAcesso;
+	
+	/**Descrição do nivel de acesso*/
 	private String descAcesso;
 	
 	/**
-	 * @return the cdAcesso
+	 * @return retorna o valor da variavel cdAcesso
 	 */
 	public int getCdAcesso() {
 		return cdAcesso;
 	}
 
 	/**
-	 * @param cdAcesso the cdAcesso to set
+	 * @param passa o valor do parametro cdAcesso para a variavel cdAcesso
 	 */
 	public void setCdAcesso(int cdAcesso) {
 		this.cdAcesso = cdAcesso;
 	}
 
 	/**
-	 * @return the descAcesso
+	 * @return o valor da variavel desAcesso
 	 */
-	public String getDescAcesso() {
+	public String getdescAcesso() {
 		return descAcesso;
 	}
 
 	/**
-	 * @param descAcesso the descAcesso to set
+	 * @param passa o valor do parametro descAcesso para a variavel descAcesso
 	 */
-	public void setDescAcesso(String descAcesso) {
+	public void setdescAcesso(String descAcesso) {
 		this.descAcesso = descAcesso;
 	}
 
