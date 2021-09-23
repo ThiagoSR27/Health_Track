@@ -18,6 +18,13 @@ public class DadosCorporais {
 		
 	}
 
+
+	public DadosCorporais(int peso, String data) {
+		this.peso = peso;
+		this.data = data;
+	}
+
+
 	/**
 	 * @return o valor da variavel peso.
 	 */
@@ -45,4 +52,14 @@ public class DadosCorporais {
 	public void setData(String data) {
 		this.data = data;
 	}
+
+
+	@Override
+	public String toString() {
+		return "{" +
+			" peso='" + getPeso() + "'" +
+			", data='" + getData() + "'" +
+			"}";
+	}
+
 }
