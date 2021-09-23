@@ -1,6 +1,6 @@
 package br.com.healthtrack.teste;
 
-import br.com.healthtrack.Usuario;
+import br.com.healthtrack.entidades.Usuario;
 public class HealthTrackTeste {
     public static void main(String[] args) {
         Usuario user = new Usuario();
