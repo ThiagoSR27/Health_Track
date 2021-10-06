@@ -23,12 +23,13 @@ nr_tel number(9) not null,
 CONSTRAINT PK_HT_Usuario PRIMARY KEY(cd_usuario)
 );
 
-create table T_HT_IMC(
-cd_imc number(6) not null,
+create table T_HT_DadosCorporais(
+cd_dados_corp number(6) not null,
 vl_peso number(5,2) not null,
 vl_altura number(3,2) not null,
-dt_imc date not null,
-CONSTRAINT PK_HT_IMC PRIMARY KEY(cd_imc)
+vl_imc number (4,2) not null,
+dt_dados_corp date not null,
+CONSTRAINT PK_HT_DadosCorporais PRIMARY KEY(cd_dados_corp)
 );
 
 create table T_HT_Planos(
@@ -66,7 +67,7 @@ add cd_acesso number(6);
 alter table T_HT_Usuario
 add cd_planos number(6);
 
-alter table T_HT_IMC
+alter table T_HT_DadosCorporais
 add cd_usuario number(6);
 
 alter table T_HT_Exercicio
@@ -80,10 +81,33 @@ add constraint FK_ACESSO_USER foreign key (cd_acesso)references T_HT_ACESSO(cd_a
 alter table T_HT_Usuario
 add constraint FK_PLANOS_USER foreign key (cd_planos)references T_HT_Planos(cd_planos);
 
-alter table T_HT_IMC
-add constraint FK_USER_IMC foreign key (cd_usuario)references T_HT_Usuario(cd_usuario);
+alter table T_HT_DadosCorporais
+add constraint FK_USER_DadosCorp foreign key (cd_usuario)references T_HT_Usuario(cd_usuario);
 
 alter table T_HT_EXERCICIO
 add constraint FK_USER_EXERC foreign key(cd_usuario) references T_HT_Usuario(cd_usuario);
+
+-- criando as sequencias que serão utilizadas
+
+create sequence SQ_USUARIO
+increment by 1
+start with 1
+maxvalue 999
+nocache
+nocycle;
+
+create sequence SQ_DADOSCORP
+increment by 1
+start with 1
+maxvalue 999
+nocache
+nocycle;
+
+create sequence SQ_EXERCICIO
+increment by 1
+start with 1
+maxvalue 999
+nocache
+nocycle;
 
 
