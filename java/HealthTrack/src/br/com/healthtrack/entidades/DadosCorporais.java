@@ -5,7 +5,7 @@ package br.com.healthtrack.entidades;
  * @author thiag_edf
  * @version 1.0
  */
-public class DadosCorporais {
+public class DadosCorporais extends Imc {
 	
 	/**Peso do usuario.*/
 	private int peso;
@@ -47,7 +47,7 @@ public class DadosCorporais {
 	}
 
 	/**
-	 * @param data passae o valor do parametro data para a variavel data.
+	 * @param data passa o valor do parametro data para a variavel data.
 	 */
 	public void setData(String data) {
 		this.data = data;
@@ -61,5 +61,6 @@ public class DadosCorporais {
 			", data='" + getData() + "'" +
 			"}";
 	}
+	
 
 }

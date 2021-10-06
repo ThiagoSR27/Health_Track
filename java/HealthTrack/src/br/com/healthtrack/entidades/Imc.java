@@ -8,6 +8,7 @@ package br.com.healthtrack.entidades;
  */
 public class Imc {
 	private float altura;
+	private float imc;
 	/**Altura do usuario*/
 
 	/*construtor*/
@@ -29,6 +30,14 @@ public class Imc {
 	public void setAltura(float altura) {
 		this.altura = altura;
 	}
-	
+
+	public float getImc() {
+		return this.imc;
+	}
+
+	public void setImc(float imc) {
+		this.imc = imc;
+	}
+
 	
 }

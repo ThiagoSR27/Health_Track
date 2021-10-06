@@ -5,10 +5,15 @@ package br.com.healthtrack.entidades;
  * @version 1.0
  *
  */
-public class Usuario extends Pessoa {
+public class Usuario {
 	
 	/*Codigo do usuario.**/
 	private int cdUsuario;
+
+	private String nome;
+    private String sobrenome;
+    private int idade;
+
 	
 	/**Numero do celular.*/
 	private int telCelular;
@@ -127,6 +132,51 @@ public class Usuario extends Pessoa {
 	 */
 	public void setCpf(int cpf) {
 		this.cpf = cpf;
+	}
+
+	/**
+	 * @return retorna dos dados armazenados em Nome
+	 */
+	public String getNome() {
+		return nome;
+	}
+
+
+	/**
+	 * @param nome passa os dados para nome
+	 */
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+	/**
+	 * @return retorna os dados armazenados em Sobrenome
+	 */
+	public String getSobrenome() {
+		return sobrenome;
+	}
+
+
+	/**
+	 * @param sobrenome passa os dados para sobrenome
+	 */
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
+
+    /**
+	 * @return retorna os dados armazenados em idade
+	 */
+	public int getIdade() {
+		return idade;
+	}
+
+    /**
+	 * @param idade passa os dados para idade
+	 */
+	public void setIdade(int idade) {
+		this.idade = idade;
 	}
 
 }

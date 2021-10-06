@@ -7,6 +7,8 @@ import br.com.healthtrack.entidades.DadosCorporais;
 
 public class HealthTrackTesteColecoes {
     public static void main(String[] args) {
+
+        
         
         System.out.println("Dados");
         System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
