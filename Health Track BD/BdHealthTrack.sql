@@ -12,6 +12,27 @@
 
 --drop table T_HT_Acesso;
 
+--Utilizando o select para gerar os drop tables das tabelas a qual eu criei/tenho acesso
+
+--select 'drop table ' || table_name || ';' from user_tables;
+
+--Tabelas deletadas por drop table nao sao apagadas diretamente, elas vao para uma lixeira
+--que pode ser acessada
+
+--show recyclebin;
+
+--posso fazer um select direto da "lixeira"
+
+--select * from "BIN$TFihQ1YlR2Cp7UlKD3ERRQ==$0";
+
+--E posso restaurar a tabela
+
+--flashback table <nome da tabela> to before drop;
+
+--Para apagar a tabela sem possibilidade de ser recuperada
+
+--drop table <nome da table> purge;
+
 create table T_HT_Usuario(
 cd_usuario number(6),
 nm_user varchar(20) not null,
@@ -109,5 +130,42 @@ start with 1
 maxvalue 999
 nocache
 nocycle;
+
+--Criando querys de inserção de dados nas tabelas
+
+-- insert para tabela usuario
+insert into T_HT_USUARIO
+(cd_usuario,nm_user, nr_senha, nm_nome, nm_sobrenome,ds_email, nr_tel)
+values(SQ_USUARIO.nextval, 'maskarabol', 12357,'thiago', 'sousa', 'thiago_teste@teste.com','35558999'  );
+    
+-- insert para tabela dados corporais
+insert into T_HT_DadosCorporais
+(cd_dados_corp, vl_peso, vl_altura, vl_imc, dt_dados_corp)
+values(SQ_DADOSCORP.nextval, 60, 1.82, 18.11, sysdate);
+
+--insert para tabela planos
+insert into T_HT_Planos
+(cd_planos,ds_planos, vl_planos)
+values(1, 'Gratuito', 0.00);
+
+-- insert para tabela exercicios
+insert into T_HT_EXERCICIO
+(cd_exercicio, dt_exercicio, ds_exercicio, vl_duracao)
+values(sq_exercicio.nextval, sysdate, 'abdominal',35);
+
+--insert para tabela acesso
+insert into t_ht_acesso
+(cd_acesso, ds_acesso)
+values(1,'ADM')
+
+--querys delete
+
+-- delete from T_HT_USUARIO where cd_usuario = X;
+
+--delete from t_ht_dadoscorporais where "cd_usuario = x" cd_dados_corp = 1
+
+--delete from t_ht_exercicio where "cd_usuario = x" cd_exercicio = 1
+
+
 
 
