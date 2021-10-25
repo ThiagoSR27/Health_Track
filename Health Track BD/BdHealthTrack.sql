@@ -136,7 +136,7 @@ nocycle;
 -- insert para tabela usuario
 insert into T_HT_USUARIO
 (cd_usuario,nm_user, nr_senha, nm_nome, nm_sobrenome,ds_email, nr_tel)
-values(SQ_USUARIO.nextval, 'maskarabol', 12357,'thiago', 'sousa', 'thiago_teste@teste.com','35558999'  );
+values(SQ_USUARIO.nextval, 'nelson', 12357,'jose', 'nelson', 'nelson_teste@teste.com','3555899'  );
     
 -- insert para tabela dados corporais
 insert into T_HT_DadosCorporais
@@ -165,6 +165,8 @@ values(1,'ADM')
 --delete from t_ht_dadoscorporais where "cd_usuario = x" cd_dados_corp = 1
 
 --delete from t_ht_exercicio where "cd_usuario = x" cd_exercicio = 1
+
+commit
 
 
 
