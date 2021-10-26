@@ -2,15 +2,17 @@
 
 -- Comandos de drop table do sistema health track
 
---drop table T_HT_Usuario;
+--drop table T_HT_UsuarioT;
 
 --drop table T_HT_IMC;
 
---drop table T_HT_Planos;
+--drop table T_HT_Planos cascade constraints;
 
---drop table T_HT_Exercicio;
+--drop table T_HT_Exercicio cascade constraints;
 
 --drop table T_HT_Acesso;
+
+--drop table t_ht_dadoscorporais;
 
 --Utilizando o select para gerar os drop tables das tabelas a qual eu criei/tenho acesso
 
@@ -33,7 +35,7 @@
 
 --drop table <nome da table> purge;
 
-create table T_HT_Usuario(
+create table T_HT_UsuarioT(
 cd_usuario number(6),
 nm_user varchar(20) not null,
 nr_senha varchar(8) not null, 
@@ -41,7 +43,7 @@ nm_nome varchar(30) not null,
 nm_sobrenome varchar(30) not null,
 ds_email varchar(30) not null,
 nr_tel number(9) not null,
-CONSTRAINT PK_HT_Usuario PRIMARY KEY(cd_usuario)
+CONSTRAINT PK_HT_UsuarioT PRIMARY KEY(cd_usuario)
 );
 
 create table T_HT_DadosCorporais(
@@ -75,17 +77,17 @@ CONSTRAINT PK_HT_Acesso PRIMARY KEY(cd_acesso)
 );
 
 --adicionando a constraint unique ao usuario e ao email
-alter table T_HT_Usuario
+alter table T_HT_UsuarioT
 add constraint UN_HT_NM_USER unique (nm_user);
 
-alter table T_HT_USUARIO
-add constraint UN_HT_DS_EMAIL unique (ds_email);
+alter table T_HT_USUARIOT
+add constraint UN_HT_DS_EMAILT unique (ds_email);
 
 --criando os campos que iram receber as chaves estrangeiras(FK)
-alter table T_HT_Usuario
+alter table T_HT_UsuarioT
 add cd_acesso number(6);
 
-alter table T_HT_Usuario
+alter table T_HT_UsuarioT
 add cd_planos number(6);
 
 alter table T_HT_DadosCorporais
@@ -96,21 +98,21 @@ add cd_usuario number(6);
 
 --criando as chaves estrangeiras(FK)
 
-alter table T_HT_Usuario
-add constraint FK_ACESSO_USER foreign key (cd_acesso)references T_HT_ACESSO(cd_acesso);
+alter table T_HT_UsuarioT
+add constraint FK_ACESSO_USER foreign key (cd_acesso)references T_HT_ACESSOT(cd_acesso);
 
-alter table T_HT_Usuario
+alter table T_HT_UsuarioT
 add constraint FK_PLANOS_USER foreign key (cd_planos)references T_HT_Planos(cd_planos);
 
 alter table T_HT_DadosCorporais
-add constraint FK_USER_DadosCorp foreign key (cd_usuario)references T_HT_Usuario(cd_usuario);
+add constraint FK_USER_DadosCorp foreign key (cd_usuario)references T_HT_UsuarioT(cd_usuario);
 
 alter table T_HT_EXERCICIO
-add constraint FK_USER_EXERC foreign key(cd_usuario) references T_HT_Usuario(cd_usuario);
+add constraint FK_USER_EXERC foreign key(cd_usuario) references T_HT_UsuarioT(cd_usuario);
 
 -- criando as sequencias que serão utilizadas
 
-create sequence SQ_USUARIO
+create sequence SQ_USUARIOT
 increment by 1
 start with 1
 maxvalue 999
@@ -134,9 +136,9 @@ nocycle;
 --Criando querys de inserção de dados nas tabelas
 
 -- insert para tabela usuario
-insert into T_HT_USUARIO
+insert into T_HT_USUARIOT
 (cd_usuario,nm_user, nr_senha, nm_nome, nm_sobrenome,ds_email, nr_tel)
-values(SQ_USUARIO.nextval, 'nelson', 12357,'jose', 'nelson', 'nelson_teste@teste.com','3555899'  );
+values(SQ_USUARIOT.nextval, 'nelson', 12357,'jose', 'nelson', 'nelson_teste@teste.com','3555899'  );
     
 -- insert para tabela dados corporais
 insert into T_HT_DadosCorporais
@@ -160,11 +162,13 @@ values(1,'ADM')
 
 --querys delete
 
--- delete from T_HT_USUARIO where cd_usuario = X;
+-- delete from T_HT_USUARIOT where cd_usuario = X;
 
 --delete from t_ht_dadoscorporais where "cd_usuario = x" cd_dados_corp = 1
 
 --delete from t_ht_exercicio where "cd_usuario = x" cd_exercicio = 1
+
+--delete from t_ht_acesso where cd_acesso = 1 or cd_acesso = 2;
 
 commit
 
