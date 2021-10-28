@@ -1,5 +1,9 @@
 package br.com.healthtrack.entidades;
 
+import java.util.List;
+
+import br.com.healthtrack.dao.AcessoDao;
+
 /**Abstrai uma classe que ira determinar o nivel de acesso do usuario ao sistema
  * @author thiag_ed
  * @version 1.0
@@ -34,7 +38,7 @@ public class Acesso {
 	/**
 	 * @return o valor da variavel desAcesso
 	 */
-	public String getdescAcesso() {
+	public String getDescAcesso() {
 		return descAcesso;
 	}
 
@@ -45,5 +49,35 @@ public class Acesso {
 		this.descAcesso = descAcesso;
 	}
 
+	//Link entre o dao e a tela de controle
+	public int AdicionaAcesso(){
+		AcessoDao aDao = new AcessoDao();
+		return aDao.Add(this);
+	}
+
+	public List<Acesso> VisualizarAcessos(){
+		AcessoDao aDao = new AcessoDao();
+		return aDao.Getall();
+	}
+
+	public Acesso SelecionaAcesso(int id){
+		AcessoDao aDao = new AcessoDao();
+		return aDao.GetById(id);
+		
+	}
+
+	public int RemoveAcesso(int id){
+		AcessoDao aDao = new AcessoDao();
+		return aDao.Delete(id);
+	}
+
+
+	@Override
+	public String toString() {
+		return "{" +
+			" cdAcesso='" + getCdAcesso() + "'" +
+			", descAcesso='" + getDescAcesso() + "'" +
+			"}";
+	}
 	
 }

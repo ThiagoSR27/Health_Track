@@ -168,7 +168,7 @@ values(1,'ADM')
 
 --delete from t_ht_exercicio where "cd_usuario = x" cd_exercicio = 1
 
---delete from t_ht_acesso where cd_acesso = 1 or cd_acesso = 2;
+--delete from t_ht_acesso where cd_acesso = 1 or cd_acesso = 2 or cd_acesso = 3;
 
 commit
 
