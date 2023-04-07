@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap-5/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/png" sizes="32x32">
+    <title>Cadastro de Peso</title>
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-xl navbar-light bg-light pt-0">
+            <div class="container-fluid">
+                 <a href="#" class="navbar-brand">
+                <img src="../img/brand-removebg-preview.png" alt="logo">
+                <div class="title">
+                    <h1 class="nick-nav">Health Track</h1>
+                </div>
+            
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item px-2 py-2">
+
+                            <a href="principal.htm" class="nav-link btn btn-outline-secondary">Home <span class="sr-only">(pagina atual)</span></a>
+
+                        </li>
+
+                        <li class="nav-item ml-auto px-2 py-2">
+
+                            <a href="cadastro_peso.htm" class="nav-link active btn btn-outline-secondary">Cadastro de Peso</a>
+
+                        </li>
+
+                        <li class="nav-item ml-auto px-2 py-2">
+
+                            <a href="cadastro_atividade.htm" class="nav-link btn btn-outline-secondary">Cadastro de Atividade Fisica</a>
+
+                        </li>
+
+                        <li class="nav-item ml-auto px-2 py-2">
+
+                            <a href="cadastro_altura.htm" class="nav-link btn btn-outline-secondary">Cadastro de Altura</a>
+                        </li>
+
+                        <li class="nav-item ml-auto px-2 py-2">
+
+                            <a href="../index.htm" class="nav-link btn btn-outline-danger">Sair</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class=" div-title bg-light text-dark mt-auto">
+
+            <div class="container-fluid">
+
+                <h1 class="hist-title">Cadastro de Peso</h1>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="container-fluid">
+
+        <form class="form-peso pt-4">
+
+            <div class="row justify-content-center">
+
+                <div class=" form-group col-6 mx-2">
+
+                    <div class="form-floating">
+
+                        <input type="number" class="form-control" id="cad-peso" placeholder="Insira seu Peso">
+                        <label for="cad-peso">Peso</label>
+
+                    </div>
+
+                    <div class="form-text">Insira o peso em KG</div>                    
+                    
+                </div>
+
+                <div class=" form-group col-6 my-5">
+
+                    <div class="form-floating">
+
+                        <input type="date" class="form-control" id="data-peso" placeholder="Selecione a data">
+                        <label for="data-peso">Data</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-buttons pb-5">
+
+                <div class="row justify-content-center">
+                    <div class="form-group col-md-5 col-xl-5 py-5">
+    
+                        <button class="btn btn-outline-success" type="submit">Concluir</button>
+    
+                    </div>
+    
+                    <div class="form-group col-md-5 col-xl-5 py-5">
+    
+                        <button class="btn btn-outline-danger" type="reset">Cancelar</button>
+    
+                    </div>
+    
+                </div>
+                
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer class="footer mt-auto bg-light text-dark pt-3">
+        <div class="container-fluid">
+            <h2 class="footer">©2021 Health Track </h2>
+        </div>
+    </footer>
+
+    <script src="../js/bootstrap-5/bootstrap.bundle.min.js"></script>
+</body>
+</html>

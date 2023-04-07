@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "java/HealthTrack/lib/ojdbc6.jar"
+    ],
+    "liveServer.settings.port": 5501
+}

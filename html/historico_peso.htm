@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap-5/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/png" sizes="32x32">
+    <title>Health Track - Historico de Peso </title>
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-xl navbar-light bg-light pt-0">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+
+                    <img src="../img/brand-removebg-preview.png" alt="logo">
+
+                    <div class="title">
+
+                        <h1 class="nick-nav">Health Track</h1>
+                        
+                    </div>
+                    
+                </a>
+
+                <button class="navbar-toggler mr-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="menu" >
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item px-2 py-2 ml-auto">
+
+                            <a href="principal.htm" class="nav-link btn btn-outline-secondary">Home <span class="sr-only">(pagina atual)</span></a>
+
+                        </li>
+
+                        <li class="nav-item mr-auto px-2 py-2">
+
+                            <a href="cadastro_peso.htm" class="nav-link btn btn-outline-secondary">Cadastro de Peso</a>
+
+                        </li>
+
+                        <li class="nav-item mr-auto px-2 py-2">
+
+                            <a href="cadastro_atividade.htm" class="nav-link btn btn-outline-secondary">Cadastro de Atividade Fisica</a>
+
+                        </li>
+
+                        <li class="nav-item mr-auto px-2 py-2">
+
+                            <a href="cadastro_altura.htm" class="nav-link btn btn-outline-secondary">Cadastro de Altura</a>
+                        </li>
+
+                        <li class="nav-item mr-auto px-2 py-2">
+
+                            <a href="../index.htm" class="nav-link btn btn-outline-danger">Sair</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class=" div-title bg-light text-dark mt-auto">
+
+            <div class="container-fluid">
+
+                <h1 class="hist-title">Historico de Peso</h1>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="container-fluid">
+
+        <div class="table-responsive-sm">
+
+            <table class="table table-borderless table-striped">
+
+                <thead>
+    
+                    <tr>
+    
+                        <th scope="col">Data</th>
+                        <th scope="col">Peso</th>
+                        <th scope="col">Ações</th>
+    
+                    </tr>
+    
+                </thead>
+    
+                <tbody>
+    
+                    <tr>
+    
+                        <th scope="row">15/05/2021</th>
+                        <td>150<span>Kg</span></td>
+                        <td><i class="bi bi-trash del-icon"></i></td>
+    
+                    </tr>
+
+                    <tr>
+    
+                        <th scope="row">15/04/2021</th>
+                        <td>153<span>Kg</span></td>
+                        <td><i class="bi bi-trash del-icon"></i></td>
+    
+                    </tr>
+
+                    <tr>
+    
+                        <th scope="row">15/03/2021</th>
+                        <td>154<span>Kg</span></td>
+                        <td><i class="bi bi-trash del-icon"></i></td>
+    
+                    </tr>
+
+                    <tr>
+    
+                        <th scope="row">15/02/2021</th>
+                        <td>155<span>Kg</span></td>
+                        <td><i class="bi bi-trash del-icon"></i></td>
+    
+                    </tr>
+    
+                </tbody>
+    
+            </table>
+
+        </div>
+    </main>
+
+    <footer class="footer mt-auto bg-light text-dark pt-3 fixed-bottom">
+        <div class="container-fluid">
+            <h2 class="footer">©2021 Health Track </h2>
+        </div>
+    </footer>
+
+    <script src="../js/bootstrap-5/bootstrap.bundle.min.js"></script>
+</body>
+</html>

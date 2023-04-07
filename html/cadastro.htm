@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap-5/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/png" sizes="32x32">
+    
+    <title>Health Track - Cadastro</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="container-fluid">
+
+            <div class=" row bg-light text-dark">
+
+                <div class="col-xl-2 col-sm-3 col-md-12">
+
+                    <img src="../img/brand-removebg-preview.png" alt="logo">
+
+                    <div class="title">
+
+                        <h1 class="nick-nav">Health Track</h1>
+
+                    </div>
+
+                </div>
+
+                <div class="col-xl-8 col-sm-6 col-md-12 pt-4 ">
+
+                    <h1 class="cad-1 pt-3">Cadastro</h1> 
+
+                </div>
+                
+            </div>
+
+        </div>
+    
+    </header>
+        <form class="form-grid pt-4">
+            <h2 class="cad-2">Dados do Login</h2>
+            <div class="row justify-content-center">
+
+                <div class="form-group col-md-5 col-xl-5 pt-3 px-3">
+
+                    <div class="form-floating">
+
+                        <input type="email" class="form-control" id="username-cad" placeholder="Digite o seu email">
+                        <label for="username-cad" class="label-cad">Username</label>
+                       
+                    </div>
+                    
+                </div>
+
+
+
+                <div class="form-group col-md-5 col-xl-5 pt-3 px-3">
+                    <div class="form-floating">
+
+                    <input type="password" class="form-control" id="pwd-cad" placeholder="Digite sua senha">
+                    <label for="pwd-cad" class="label-cad">Senha</label>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group col-md-5 col-xl-4 pb-5 pt-3 px-3">
+
+                    <div class="form-floating">
+                      
+                        <input type="text" class="form-control" id="email-cad" placeholder="XXX-XXX-XXX.XX">  
+                        <label for="cpf-cad" class="label-cad">Email</label>
+                        
+                    </div>
+
+                </div>
+
+                <div class="form-group col-md-5 col-xl-4 pb-5 pt-3 px-3">
+
+                    <div class="form-floating">
+
+                    <input type="text" class="form-control" id="cpf-cad" placeholder="XXX-XXX-XXX.XX">
+                    <label for="cpf-cad" class="label-cad">CPF</label>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </form>
+
+        <form class="form-grid mt-4 mb-5">
+
+            <h2 class="cad-2 pt-4">Dados do Usuario</h2>
+
+            <div class="row justify-content-center">
+
+                <div class="form-group col-md-5 col-xl-5 pt-3 px-3">
+
+                    <div class="form-floating">
+                      
+                    <input type="text" class="form-control " id="nome-cad" placeholder="Digite seu nome">  
+                    <label for="nome-cad" class="label-cad">Nome</label>
+                    
+                    </div>
+
+                </div>
+
+                <div class="form-group col-md-5 col-xl-5 pt-3 px-3">
+
+                    <div class="form-floating">
+
+                    <input type="text" class="form-control" id="sm-nome-cad" placeholder="Digite seu sobrenome">
+                    <label for="sb-nome-cad" class="label-cad">Sobrenome</label>
+                    
+                    </div>
+
+                </div>
+
+                <div class=" form-group col-md-3 col-xl-3 pt-3 px-3">
+
+                    <div class="form-floating">
+
+                    <input type="date" class="form-control" id="dt-nasc-cad" placeholder="Insira sua Data de Nascimento">
+                    <label for="dt-nasc-cad" class="label-cad">Data de Nascimento </label>
+
+                    </div>
+
+                </div>
+
+            <div class="form-group col-md-4 col-xl-4 pt-3 px-3">
+
+                <div class="form-floating">
+                
+                    <input type="text" class="form-control" id="rg-cad" placeholder="XXX.XXX.XXX-X">
+                    <label for="rg-cad">RG</label>
+
+                </div>
+
+            </div>
+
+            <div class="form-group col-md-3 col-xl-3 pt-3 px-3">
+
+                <div class="form-floating">
+
+                    <select name="sexo-cad" class="form-select" id="sexo-cad">
+
+                        <option selected>Selecione</option>
+                        <option value="fem">Feminino</option>
+                        <option value="mas">Masculino</option>
+                        <option value="n-bin">Não binario</option>
+                        <option value="trans-gen">Transgenero</option>
+
+                    </select>
+                    
+                    <label for="sexo-cad" class="label-cad">Sexo</label>
+
+                </div>
+                
+ 
+            </div> 
+
+            <div class="form-group col-md-3 col-xl-3 pt-3 px-3">
+
+                <div class="form-floating">
+
+                    <input type="text" class="form-control" id="cep-cad" placeholder="XX.XXX-XX">
+
+                    <label for="cep-cad" class="label-cad">CEP</label>
+
+                </div>
+
+            </div>
+
+            <div class="form-group col-md-4 col-xl-4 pt-3 px-3">
+
+                <div class="form-floating">
+
+                    <input type="text" class="form-control" id="endereco-label" placeholder="Digite seu endereço">
+
+                    <label for="endereco-label" class="label-cad">Endereço</label>
+
+                </div>
+
+            </div>
+
+            <div class="form-group col-md-4 col-xl-3 pt-3 px-3">
+
+                <div class="form-floating">
+                
+                    <input type="text" class="form-control" id="num-cad" placeholder="Numero da casa">
+                    <label for="num-cad" class="label-cad">N°</label>
+
+                </div>
+
+            </div>
+
+            <div class="form-group col-md-4 col-xl-4 pt-3 px-3">
+
+                <div class="form-floating">
+
+                    <input type="text" class="form-control" id="bairro-cad" placeholder="Digite seu bairro">
+
+                    <label for="bairro-cad" class="label-cad">Bairro</label>
+
+                </div>
+
+            </div>
+
+            <div class="form-group col-md-3 col-xl-3 pt-3 px-3">
+
+                <div class="form-floating">
+
+                    <input type="text" class="form-control" id="comp-cad" placeholder="Complemento do n°">
+
+                    <label for="comp-cad">Complemento</label>
+
+                </div>
+
+            </div>
+
+            <div class="form-group col-md-4 col-xl-4 pt-3 px-3">
+
+                <div class="form-floating">
+
+                    <input type="text" class="form-control" id="cidade-cad" placeholder="Digite a sua cidade">
+                    
+                    <label for="cidade-cad">Cidade</label>
+                    
+                </div>
+
+            </div>
+
+            <div class="form-group col-md-3 col-xl-3 pt-3 pb-5 px-3">
+                <div class="form-floating">
+
+                    <select name="estado-cad" id="estado-cad" class="form-select">
+                    
+                        <option selected value="none">Selecione..</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+
+                    </select>
+
+                    <label for="estado-cad"> Estado</label>
+                </div>
+
+            </div>
+            
+                <div class="form-group col-md-4 col-xl-4 pt-3 pb-5 px-3">
+
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="tel-cad" placeholder="(XX)XXXX-XXXX">
+                        <label for="tel-cad">DDD + Telefone</label>
+                    </div>
+
+                </div>
+
+                <div class="form-group col-md-4 col-xl-4 pt-3 pb-5 px-3">
+
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="cel-cad" placeholder="(XX)9XXXX-XXXX">
+                        <label for="cel-cad">DDD + Celular</label>
+                    </div>
+
+                </div>
+        </form>
+
+        <form class="form-buttons mb-5">
+            <div class="row justify-content-center">
+                <div class="form-group col-md-5 col-xl-5 my-5">
+
+                    <a href="principal.htm" class="btn btn-success">Concluir</a>
+
+                </div>
+
+                <div class="form-group col-md-5 col-xl-5 my-5">
+
+                    <a href="../index.htm" class="btn btn-danger">Cancelar</a>
+
+                </div>
+
+            </div>
+            
+        </form>
+
+    
+
+    <footer class="footer mt-auto bg-light text-dark pt-3">
+        <div class="container-fluid">
+            <h2 class="footer">©2021 Health Track </h2>
+        </div>
+    </footer>
+
+    <script src="../js/bootstrap-5/bootstrap.bundle.min.js"></script>
+</body>
+</html>
